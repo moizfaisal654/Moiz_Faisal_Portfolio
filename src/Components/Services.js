@@ -12,7 +12,7 @@ export default function Services() {
       <div className="row">
         <div className="col-lg-11 mx-auto">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 col-sm-6 col-xsm-6 service-sec text-center">
               <div className="row featured-box style-3 mb-5">
                 <div className="col-lg-3 featured-box-icon text-primary  shadow-sm rounded bg-dark-1">
                   <i className="fas fa-desktop"></i>
@@ -25,19 +25,8 @@ export default function Services() {
                 </div>
               </div>
             </div>
-            {/* <div className="col-md-6">
-              <div className="featured-box style-3 mb-5">
-                <div className="featured-box-icon text-primary  shadow-sm rounded bg-dark-1">
-                  <i className="fas fa-pencil-ruler"></i>
-                </div>
-                <h3 className="text-white">UI/UX Design</h3>
-                <p className="mb-0 text-white-50">
-                  Lisque persius interesset his et, in quot quidam persequeris
-                  vim, ad mea essent possim iriure.
-                </p>
-              </div>
-            </div> */}
-            <div className="col-md-6">
+            
+            <div className="col-md-6 col-sm-6 col-xsm-6 service-sec text-center">
               <div className="row featured-box style-3 mb-5">
                 <div className="col-lg-3 featured-box-icon text-primary  shadow-sm rounded bg-dark-1">
                   <i className="fas fa-paint-brush"></i>
@@ -50,7 +39,7 @@ export default function Services() {
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 col-sm-6 col-xsm-6 service-sec text-center">
               <div className="row featured-box style-3 mb-5">
                 <div className="col-lg-3 featured-box-icon text-primary  shadow-sm rounded bg-dark-1">
                   <i className="fas fa-paint-brush"></i>
@@ -63,7 +52,7 @@ export default function Services() {
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 col-sm-6 col-xsm-6 service-sec text-center">
               <div className="row featured-box style-3 mb-5">
                 <div className="col-lg-3 featured-box-icon text-primary  shadow-sm rounded bg-dark-1">
                   <i className="fas fa-chart-area"></i>

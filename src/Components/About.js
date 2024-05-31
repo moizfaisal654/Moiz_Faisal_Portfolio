@@ -62,7 +62,7 @@ export default function About() {
               <div className="col-6 col-md-3">
                 <div className="year-Experience featured-box text-center">
                   <h4 className="text-12  mb-0 text-white-50">
-                    <span>10</span>+
+                    <span>01</span>+
                   </h4>
                   <p className="mb-0 text-light">Years Experiance</p>
                 </div>
@@ -70,7 +70,7 @@ export default function About() {
               <div className="col-6 col-md-3">
                 <div className="Experience featured-box text-center">
                   <h4 className="text-12  mb-0 text-white-50">
-                    <span>250</span>+
+                    <span>10</span>+
                   </h4>
                   <p className="mb-0 text-light">Happy Clients</p>
                 </div>
@@ -78,7 +78,7 @@ export default function About() {
               <div className="col-6 col-md-3">
                 <div className="Experience featured-box text-center">
                   <h4 className="text-12  mb-0 text-white-50">
-                    <span>650</span>+
+                    <span>10</span>+
                   </h4>
                   <p className="mb-0 text-light">Projects Done</p>
                 </div>
@@ -86,9 +86,9 @@ export default function About() {
               <div className="col-6 col-md-3">
                 <div className="Experience featured-box text-center">
                   <h4 className="text-12  mb-0 text-white-50">
-                    <span>38</span>
+                    <span>02</span>
                   </h4>
-                  <p className="mb-0 text-light">Get Awards</p>
+                  <p className="mb-0 text-light">Certificate</p>
                 </div>
               </div>
             </div>

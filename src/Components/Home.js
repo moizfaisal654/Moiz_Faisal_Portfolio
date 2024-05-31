@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
+
 export default function Home() {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -53,7 +54,7 @@ export default function Home() {
         <div className="hero-bg parallax"></div>
         <div className="hero-content section d-flex min-vh-100">
           <div className="container my-auto">
-            <div className="row">
+            <div className="row home-sub">
               <div className="col-12 text-center">
                 <p className="fs-4 text-white mb-2 mb-md-3">Welcome</p>
                 <h2 className="fs-2 fw-bold text-white mb-2 mb-md-3">
@@ -63,14 +64,13 @@ export default function Home() {
                   </div>
                 </h2>
                 <p className="fs-5 text-light mb-4">
-                  based in Los Angeles, California.
+                  Based in Karachi, Pakistan.
                 </p>
                 <a
                   href="#contact"
                   className="btn btn-outline-primary rounded-pill shadow-none smooth-scroll mt-2 py-3 px-5"
                   onClick={(e) => {
                     e.preventDefault();
-                    console.log("Hire Me button clicked"); // Add this line for debugging
                     scrollToSection("contact");
                   }}
                 >

@@ -66,7 +66,7 @@ export default function Resume() {
         </div>
         <h2 className="text-6 fw-600 mt-4 mb-4 text-white">My Skills</h2>
         <div className="row gx-5">
-          <div className="col-md-6">
+          <div className="col-md-6 col-sm-6 col-xsm-6 skill-bar">
             <p className=" fw-500 text-start mb-2 text-light">
               Web Design <span className="float-end">65%</span>
             </p>
@@ -81,7 +81,7 @@ export default function Resume() {
               ></div>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 col-sm-6 col-xsm-6 skill-bar">
             <p className=" fw-500 text-start mb-2 text-light">
               HTML/CSS <span className="float-end">95%</span>
             </p>
@@ -96,37 +96,37 @@ export default function Resume() {
               ></div>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 col-sm-6 col-xsm-6 skill-bar">
             <p className=" fw-500 text-start mb-2 text-light">
-              JavaScript <span className="float-end">80%</span>
+              JavaScript <span className="float-end">50%</span>
             </p>
             <div className="progress mb-4 bg-dark">
               <div
                 className="progress-bar"
                 role="progressbar"
-                style={{ width: "80%" }} 
-                aria-valuenow="80"
+                style={{ width: "50%" }} 
+                aria-valuenow="50"
                 aria-valuemin="0"
                 aria-valuemax="100"
               ></div>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 col-sm-6 col-xsm-6 skill-bar">
             <p className=" fw-500 text-start mb-2 text-light">
-              React JS <span className="float-end">70%</span>
+              React JS <span className="float-end">40%</span>
             </p>
             <div className="progress mb-4 bg-dark">
               <div
                 className="progress-bar"
                 role="progressbar"
-                style={{ width: "70%" }} 
-                aria-valuenow="70"
+                style={{ width: "40%" }} 
+                aria-valuenow="40"
                 aria-valuemin="0"
                 aria-valuemax="100"
               ></div>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 col-sm-6 col-xsm-6 skill-bar">
             <p className=" fw-500 text-start mb-2 text-light">
               Wordpress <span className="float-end">60%</span>
             </p>
@@ -141,7 +141,7 @@ export default function Resume() {
               ></div>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 col-sm-6 col-xsm-6 skill-bar">
             <p className=" fw-500 text-start mb-2 text-light">
               Bootstrap <span className="float-end">99%</span>
             </p>

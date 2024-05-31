@@ -10,15 +10,15 @@ import Portfolio from './Components/Portfolio';
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
-function App() {
+export default function App() {
   return (
     <>
    <div className="container-fluid">
       <div className="row">
-        <div className="col-lg-3 col-md-4  sidebar">
+        <div className="col-lg-3 col-md-3  sidebar">
           <Sidebar />
         </div>
-        <div className="col-lg-9 col-md-8 content">
+        <div className="col-lg-9 col-md-9 content">
         <Home/>
         <About/>
         <Services/>
@@ -33,4 +33,9 @@ function App() {
   );
 }
 
-export default App;
+
+
+
+
+
+
