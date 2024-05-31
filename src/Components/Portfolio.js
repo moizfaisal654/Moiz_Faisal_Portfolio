@@ -1,3 +1,5 @@
+
+
 import React, { useState, useEffect } from "react";
 import project1 from "../1.png";
 import project2 from "../2.png";
@@ -42,20 +44,6 @@ const tabsData = [
 const Tabs = ({ tabs }) => {
   const [currentTab, setCurrentTab] = useState(0);
 
-  useEffect(() => {
-    moveTracker();
-    triggerAnimation();
-  }, [currentTab]);
-
-  const moveTracker = () => {
-    const title = document.querySelector(
-      `.tabs__titles__title[data-index="${currentTab}"]`
-    );
-    const tracker = document.querySelector(".tabs__tracker");
-    tracker.style.width = `${title.clientWidth}px`;
-    tracker.style.left = `${title.offsetLeft}px`;
-  };
-
   const triggerAnimation = () => {
     const cards = document.querySelectorAll(".card img");
     cards.forEach((card) => {
@@ -64,6 +52,22 @@ const Tabs = ({ tabs }) => {
       card.classList.add("image-animated"); // Add the animation class
     });
   };
+
+  useEffect(() => {
+    const moveTracker = () => {
+      const title = document.querySelector(
+        `.tabs__titles__title[data-index="${currentTab}"]`
+      );
+      const tracker = document.querySelector(".tabs__tracker");
+      if (title && tracker) {
+        tracker.style.width = `${title.clientWidth}px`;
+        tracker.style.left = `${title.offsetLeft}px`;
+      }
+    };
+
+    moveTracker();
+    triggerAnimation();
+  }, [currentTab]); // Removed moveTracker from the dependency array
 
   const changeTab = (index) => {
     setCurrentTab(index);
@@ -75,39 +79,39 @@ const Tabs = ({ tabs }) => {
         <h2 className="About">Portfolio</h2>
         <p className="know">Projects</p>
       </div>
-    <div className="tabs">
-      <div className="tabs__tracker" />
-      <div className="tabs__titles">
-        {tabs.map((tab, index) => (
-          <h2
-            className={`tabs__titles__title ${
-              currentTab === index ? "active" : ""
-            }`}
-            data-index={index}
-            key={`tab-title-${index}`}
-            onClick={() => changeTab(index)}
-          >
-            {tab.title}
-          </h2>
-        ))}
-      </div>
-      <div className="tabs__contents">
-        <div className="tabs__contents__content">
-          <div className="container portfolio">
-            {tabs[currentTab].images.map((image, index) => (
-              <div className={`card ${image.sizeClass}`} key={`card-${index}`}>
-               <a href={image.link} key={`link-${index}`} target="_blank" rel="noopener noreferrer">
-                <img src={image.src} alt={image.title} />
-                <div className="overlay">
-                  <h1 className="text-h1">{image.title}</h1>
-                </div>
-                </a>
-              </div> 
-            ))}
+      <div className="tabs">
+        <div className="tabs__tracker" />
+        <div className="tabs__titles">
+          {tabs.map((tab, index) => (
+            <h2
+              className={`tabs__titles__title ${
+                currentTab === index ? "active" : ""
+              }`}
+              data-index={index}
+              key={`tab-title-${index}`}
+              onClick={() => changeTab(index)}
+            >
+              {tab.title}
+            </h2>
+          ))}
+        </div>
+        <div className="tabs__contents">
+          <div className="tabs__contents__content">
+            <div className="container portfolio">
+              {tabs[currentTab].images.map((image, index) => (
+                <div className={`card ${image.sizeClass}`} key={`card-${index}`}>
+                  <a href={image.link} key={`link-${index}`} target="_blank" rel="noopener noreferrer">
+                    <img src={image.src} alt={image.title} />
+                    <div className="overlay">
+                      <h1 className="text-h1">{image.title}</h1>
+                    </div>
+                  </a>
+                </div> 
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </section>
   );
 };
