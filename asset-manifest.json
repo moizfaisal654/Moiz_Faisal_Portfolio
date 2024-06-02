@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Moiz_Faisal_Portfolio/static/css/main.774cdec6.css",
+    "main.js": "/Moiz_Faisal_Portfolio/static/js/main.2c08bab6.js",
+    "static/js/787.609dda04.chunk.js": "/Moiz_Faisal_Portfolio/static/js/787.609dda04.chunk.js",
+    "static/media/7.png": "/Moiz_Faisal_Portfolio/static/media/7.7fd24ef722de2317f1f7.png",
+    "static/media/5.png": "/Moiz_Faisal_Portfolio/static/media/5.c6012df8dd7b1c7bacb7.png",
+    "static/media/8.png": "/Moiz_Faisal_Portfolio/static/media/8.a347f15b92681c035039.png",
+    "static/media/6.png": "/Moiz_Faisal_Portfolio/static/media/6.2eb5b2f23fd8d2179176.png",
+    "static/media/3.png": "/Moiz_Faisal_Portfolio/static/media/3.899cf0a6f7b543acead5.png",
+    "static/media/2.png": "/Moiz_Faisal_Portfolio/static/media/2.0ac6767a23f9fd50004c.png",
+    "static/media/1.png": "/Moiz_Faisal_Portfolio/static/media/1.d15657227881f1578d3c.png",
+    "static/media/profile.jpeg": "/Moiz_Faisal_Portfolio/static/media/profile.3a5e34d5026cc83ed896.jpeg",
+    "index.html": "/Moiz_Faisal_Portfolio/index.html",
+    "main.774cdec6.css.map": "/Moiz_Faisal_Portfolio/static/css/main.774cdec6.css.map",
+    "main.2c08bab6.js.map": "/Moiz_Faisal_Portfolio/static/js/main.2c08bab6.js.map",
+    "787.609dda04.chunk.js.map": "/Moiz_Faisal_Portfolio/static/js/787.609dda04.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.774cdec6.css",
+    "static/js/main.2c08bab6.js"
+  ]
+}
